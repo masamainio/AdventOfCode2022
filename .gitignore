@@ -160,4 +160,4 @@ cython_debug/
 #.idea/
 
 .vscode
-/QRev/__pycache__
+.code-workspace

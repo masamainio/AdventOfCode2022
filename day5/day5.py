@@ -1,12 +1,10 @@
-#%%
 import re
-
 
 def read_data(filepath):
     boxes = []
     instructions = []
-    reg1 = re.compile("\[\w{1}\]|[\r ]{4}")
-    reg2 = re.compile("move \d+ from \d to \d")
+    reg1 = re.compile(r"\[\w{1}\]|[\r ]{4}")
+    reg2 = re.compile(r"move \d+ from \d to \d")
 
     with open(filepath) as f:
         for line in f:
@@ -59,15 +57,12 @@ def part2(box, instructions):
         return part2(box, instructions)
 
 
-box, inst = read_data(r"day5_input.txt")
+box, inst = read_data(r"day5/day5_input.txt")
 part1(box, inst)
 answer = "".join([str(x[-1]).strip("[").strip("]") if x else " " for x in box])
 print(f"Part 1 answer: {answer}")
 
-box, inst = read_data(r"day5_input.txt")
+box, inst = read_data(r"day5/day5_input.txt")
 part2(box, inst)
 answer = "".join([str(x[-1]).strip("[").strip("]") if x else " " for x in box])
 print(f"Part 2 answer: {answer}")
-
-
-# %%

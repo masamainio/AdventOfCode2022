@@ -1,6 +1,3 @@
-#%%
-
-
 def read_data(filepath):
     _data = []
     with open(filepath) as f:
@@ -32,7 +29,6 @@ def part2(input):
     return overlapping
 
 
-data = read_data(r"day4_input.txt")
+data = read_data("day4/day4_input.txt")
 print(f"Part 1 answer: {part1(data)}")
 print(f"Part 2 answer: {part2(data)}")
-# %%

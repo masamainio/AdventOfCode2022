@@ -1,5 +1,3 @@
-#%%
-
 # Part 1
 shape_points = {"Rock": 1,
                 "Paper": 2,
@@ -18,7 +16,7 @@ me = {"Y": "Paper",
       "Z": "Scissors"}
 
 
-with open("day2_input.txt") as f:
+with open("day2/day2_input.txt") as f:
     total_points = 0
     for line in f:
         line = line.strip('\n')
@@ -43,8 +41,6 @@ with open("day2_input.txt") as f:
 print(f"Part 1 answer: {total_points}")
 
 
-# %%
-
 # Part 2
 shape_points = {"Rock": 1,
                 "Paper": 2,
@@ -63,7 +59,7 @@ me = {"Y": "draw",
       "Z": "win"}
 
 
-with open("day2_input.txt") as f:
+with open("day2/day2_input.txt") as f:
     total_points = 0
     for line in f:
         line = line.strip('\n')
@@ -97,5 +93,3 @@ with open("day2_input.txt") as f:
 
 print(f"Part 2 answer: {total_points}")
 
-
-# %%

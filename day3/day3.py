@@ -1,6 +1,3 @@
-
-#%%
-
 # Part 1
 import string
 
@@ -9,7 +6,7 @@ alphabet = list(string.ascii_lowercase) + list(string.ascii_uppercase)
 compartment1 = []
 compartment2 = []
 
-with open("day3_input.txt") as f:
+with open("day3/day3_input.txt") as f:
     total_points = 0
     for line in f:
         line = line.strip('\n')
@@ -30,12 +27,12 @@ for comp1, comp2 in zip(compartment1, compartment2):
                 FOUND = True
 
 print(f"Part 1 answer: {sum_of_prior}")
-# %%
+
 
 # Part 2
 
 rucksacks = []
-with open("day3_input.txt") as f:
+with open("day3/day3_input.txt") as f:
     total_points = 0
     for line in f:
         line = line.strip('\n')
@@ -55,6 +52,3 @@ for group in groups:
                 FOUND = True
 
 print(f"Part 2 answer: {sum_of_prior}")
-
-
-# %%

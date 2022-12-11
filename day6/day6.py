@@ -1,6 +1,3 @@
-#%%
-
-
 def day6(filepath, unique_chars):
     with open(filepath) as f:
         for line in f:
@@ -9,8 +6,5 @@ def day6(filepath, unique_chars):
                     return i + unique_chars
 
 
-print(f"Part 1 answer: {day6(r'day6_input.txt', 4)}")
-print(f"Part 2 answer: {day6(r'day6_input.txt', 14)}")
-
-
-# %%
+print(f"Part 1 answer: {day6('day6/day6_input.txt', 4)}")
+print(f"Part 2 answer: {day6('day6/day6_input.txt', 14)}")

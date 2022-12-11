@@ -1,8 +1,6 @@
-# %%
-
 # Part 1
 
-with open("day1_input.txt") as f:
+with open("day1/day1_input.txt") as f:
     highest = 0
     total = 0
     for line in f:
@@ -15,10 +13,9 @@ with open("day1_input.txt") as f:
             total = 0
 
 print(f"Part 1 answer: {highest}")
-# %%
 
 # Part 2
-with open("day1_input.txt") as f:
+with open("day1/day1_input.txt") as f:
     highest = []
     total = 0
     for line in f:
